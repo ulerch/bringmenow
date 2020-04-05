@@ -78,17 +78,17 @@ h1.tab-header {
 
 .distance-near {
   margin: 0 10px;
-  background-color: rgba(101, 230, 135, 0.5);
+  background-color: rgb(112, 173, 71);
 }
 
 .distance-acceptable {
   margin: 0 10px;
-  background-color: rgba(227, 173, 66, 0.5);
+  background-color: orange;
 }
 
 .distance-far {
   margin: 0 10px;
-  background-color: rgba(227, 66, 66, 0.5);
+  background-color: red;
 }
 
 footer {
