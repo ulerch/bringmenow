@@ -35,8 +35,11 @@ $( document ).ready(function() {
 	  } else {
       pos = 0
       setTimeout( function() {
-        $('#courrier').attr("src", "static/img/bikecourrier0.gif");
+        $('#courrier').attr("src", "static/img/bikecourrier1.gif");
       }, 500);
+      setTimeout( function() {
+        $('#courrier').attr("src", "static/img/bikecourrier0.gif");
+      }, 750);
       timeout = 1000;
     }
     setTimeout( move, timeout);
