@@ -50,6 +50,7 @@
         <span>Bakery Goods</span>
         <span>Beverages</span>
         <span>Alcohol</span>
+        <span class="deliveryTo">Delivery to <b>4500 Solothurn</b></span>
       </div>
     </header>
 
@@ -61,7 +62,7 @@
         <img id="farm2" src="{% static 'img/farm.gif' %}" height="70px" width="auto" alt="second farm">
         <img id="woman" src="{% static 'img/woman.gif' %}" height="70px" width="auto" alt="woman">
       </div>
-      <div class="away"><b>Local, ecological and fast</b>:The next bike courrier is only 500m away and could deliver your order in 40 minutes.</div>
+      <div class="away">Local, organic and fast: <span class="green">The next bike courrier is only 500m away and could deliver your order in 40 minutes.</span></div>
     </div>
 
     {% block content %}
@@ -69,7 +70,7 @@
     {% endblock %}
 
     <footer>
-      This site is an initiative by Team 424 from the Versus Virus Hackathon.
+      This site is an initiative by Team 424 from the VersusVirus Hackathon.
     </footer>
 
     <script src="https://kit.fontawesome.com/4e8a3df248.js" crossorigin="anonymous"></script>

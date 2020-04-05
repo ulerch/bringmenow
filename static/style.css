@@ -6,6 +6,10 @@ header {
   background-color: rgb(112, 173, 71);
 }
 
+.green {
+  color: rgb(112, 173, 71);
+}
+
 header .logo img {
   margin: 0.5em 1em 0 1em;
 }
@@ -28,11 +32,20 @@ header .fa-cart-arrow-down {
 }
 
 header .categories {
+  width: 100%;
   padding: 0 0 0.75em 14.25em;
+}
+
+header .categories .deliveryTo {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  font-weight: normal;
 }
 
 header .categories span {
   font-weight: bold;
+  top: 0;
   padding-right: 1em;
 }
 
@@ -70,6 +83,8 @@ div.delivery{
 
 div.away {
   padding-top: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -81,7 +96,7 @@ div.new, div.reduced {
 }
 
 .product {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -93,6 +108,7 @@ div.new, div.reduced {
 h1.tab-header {
   padding: 0 0.5em;
   border-bottom: 1px solid #000000;
+  font-size: 2em;
 }
 
 .distance-near {

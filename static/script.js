@@ -10,13 +10,13 @@ $( document ).ready(function() {
     else if( pos < endRoute ) {
       if( right < farm1 ) {
         pos = parseInt( $('#courrier').css("left") ) + step;
-        timeout = 100;
+        timeout = 200;
       } else if( right < (farm1 + 150) ) {
         pos = parseInt( $('#courrier').css("left") ) + 180;
         setTimeout( function() {
           $('#courrier').attr("src", "static/img/bikecourrier1.gif");
-        }, 250);
-        timeout = 500;
+        }, 600);
+        timeout = 1000;
       } else {
         if( right < farm2 ) {
           pos = parseInt( $('#courrier').css("left") ) + step;
@@ -25,22 +25,22 @@ $( document ).ready(function() {
           pos = parseInt( $('#courrier').css("left") ) + 180;
           setTimeout( function() {
             $('#courrier').attr("src", "static/img/bikecourrier2.gif");
-          }, 250);
-          timeout = 500;
+          }, 600);
+          timeout = 1000;
         } else {
           pos = parseInt( $('#courrier').css("left") ) + step;
-          timeout = 100;
+          timeout = 200;
         }
       }
 	  } else {
       pos = 0
       setTimeout( function() {
         $('#courrier').attr("src", "static/img/bikecourrier1.gif");
-      }, 500);
+      }, 1000);
       setTimeout( function() {
         $('#courrier').attr("src", "static/img/bikecourrier0.gif");
-      }, 750);
-      timeout = 1000;
+      }, 2000);
+      timeout = 3000;
     }
     setTimeout( move, timeout);
   }
@@ -49,6 +49,6 @@ $( document ).ready(function() {
   var farm1 = parseInt( $("#farm1").css("left") ) - parseInt( $("#courrier").width() );
   var farm2 = parseInt( $("#farm2").css("left") );
   var endRoute = parseInt( $("#woman").css("left") ) + parseInt( $("#courrier").width() );
-  var timeout = 100;
+  var timeout = 200;
   move();
 });
