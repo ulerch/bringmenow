@@ -1,0 +1,104 @@
+{% extends "bringmenow/base.html" %}
+{% load staticfiles i18n %}
+
+{% block content %}
+
+<div class="new">
+  <h1 class="tab-header">New this week</h1>
+  <div class="tab-content">
+    <table width="100%">
+      <tr>
+        <td class="product">
+          <img src="{% static 'products/product-73144.jpeg' %}" height="100px" width="auto">
+          <div class="title">Carottes</div>
+          <div class="price">CHF 3.30</div>
+          <div class="distance-near">1.5 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-98077.jpeg' %}" height="100px" width="auto">
+          <div class="title">Zopf</div>
+          <div class="price">CHF 7.80</div>
+          <div class="distance-near">750 m away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-227593.jpeg' %}" height="100px" width="auto">
+          <div class="title">Sweet potatoes</div>
+          <div class="price">CHF 4.30</div>
+          <div class="distance-far">10.7 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-3624483.jpeg' %}" height="100px" width="auto">
+          <div class="title">Cucumbers</div>
+          <div class="price">CHF 2.10</div>
+          <div class="distance-near">750 m away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-3849115.jpeg' %}" height="100px" width="auto">
+          <div class="title">Apples</div>
+          <div class="price">CHF 3.90</div>
+          <div class="distance-near">1.3 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-61638.jpeg' %}" height="100px" width="auto">
+          <div class="title">Cauliflower</div>
+          <div class="price">CHF 3.90</div>
+          <div class="distance-acceptable">5.4 km away</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="reduced">
+  <h1 class="tab-header">Reduced this week</h1>
+  <div class="tab-content">
+    <table width="100%">
+      <tr>
+        <td class="product">
+          <img src="{% static 'products/product-7830.jpeg' %}" height="100px" width="auto">
+          <div class="title">Iceberg</div>
+          <div class="price">CHF 1.70</div>
+          <div class="price-original">CHF 2.10</div>
+          <div class="distance-near">1.5 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-59034.jpeg' %}" height="100px" width="auto">
+          <div class="title">Brie</div>
+          <div class="price">CHF 4.70</div>
+          <div class="price-original">CHF 6.90</div>
+          <div class="distance-far">21.4 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-222969.jpeg' %}" height="100px" width="auto">
+          <div class="title">Oak leaf</div>
+          <div class="price">CHF 1.90</div>
+          <div class="price-original">CHF 2.40</div>
+          <div class="distance-near">500 m away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-73144.jpeg' %}" height="100px" width="auto">
+          <div class="title">Carottes</div>
+          <div class="price">CHF 3.10</div>
+          <div class="price-original">CHF 3.70</div>
+          <div class="distance-near">1.70 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-53882.jpeg' %}" height="100px" width="auto">
+          <div class="title">Milk</div>
+          <div class="price">CHF 1.70</div>
+          <div class="price-original">CHF 2.30</div>
+          <div class="distance-near">3.3 km away</div>
+        </td>
+        <td class="product">
+          <img src="{% static 'products/product-61638.jpeg' %}" height="100px" width="auto">
+          <div class="title">Cucumbers</div>
+          <div class="price">CHF 1.30</div>
+          <div class="price-original">CHF 2.20</div>
+          <div class="distance-far">11.4 km away</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}
